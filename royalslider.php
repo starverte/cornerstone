@@ -44,9 +44,10 @@ get_header(); ?>
 			<?php endif; // end sidebar widget area ?>
 				
 				<aside id="meta" class="widget side-content">
-					<?php $title= get_the_title(); ?>
+					
+					<?php $title= get_post_meta($post->ID, 'side-title', true); ?>
 					<h1 class="widget-title"><?php _e( $title.' Services', 'cornerstone' ); ?></h1>
-					<?php $side_content = get_post_meta($post->ID, 'side-content', true);
+						<?php $side_content = get_post_meta($post->ID, 'side-content', true);
 						echo $side_content; ?>
 				</aside>
 		</div><!-- #secondary .widget-area -->

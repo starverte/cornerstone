@@ -65,7 +65,7 @@
 	<header id="branding" role="banner">
 		<hgroup>
 			<a href="http://fccornerstone.com"><img id="logo" style="border:none;" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" /></a>
-		<a class="quote" href="http://fccornerstone.com/contact/quote">Request a quote</a>
+		<span class="quote"><a href="http://fccornerstone.com/blog" style="margin-right:1em;">Blog</a> <a href="http://fccornerstone.com/contact/quote">Request a quote</a></span>
             <?php get_search_form(); ?>
 		</hgroup>
 

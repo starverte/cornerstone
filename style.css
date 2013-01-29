@@ -979,12 +979,14 @@ font-size: 1.2em;
 font-variant: small-caps;
 }
 .buildpts {
-margin-top: -0.75em;
 float: right;
 }
 
 .rsMinW .rsBullets {
-bottom: -4px;
+bottom: -20px;
+}
+.page-id-364 .rsMinW .rsBullets {
+bottom: -60px;
 }
 
 .photoCopy {

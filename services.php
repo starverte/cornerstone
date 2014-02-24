@@ -3,8 +3,7 @@
  * Template Name: Services
  * Description: A template for displaying services horizontally
  *
- * @package WordPress
- * @subpackage Cornerstone
+ * @package Cornerstone
  */
 
 get_header(); ?>

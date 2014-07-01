@@ -8,27 +8,27 @@
 
 get_header(); ?>
 
-		<div id="primary" class="full-width">
-			<div id="content" role="main">
+    <div id="primary" class="full-width">
+      <div id="content" role="main">
 
-				<div id="remodel" class="services">
-                		<h2>Renovations and Remodeling</h2>
+        <div id="remodel" class="services">
+                    <h2>Renovations and Remodeling</h2>
                         <?php wp_nav_menu( array('menu' => 'Renovations and Remodeling' )); ?>
-               	</div>
+                 </div>
                 <div id="customconcepts" class="services">
-                		<h2>Custom Outdoor and Indoor Concepts</h2>
+                    <h2>Custom Outdoor and Indoor Concepts</h2>
                         <?php wp_nav_menu( array('menu' => 'Custom Outdoor and Indoor Concepts' )); ?>
-               	</div>
+                 </div>
                 <div id="com" class="services">
-                		<h2>Light Commercial</h2>
+                    <h2>Light Commercial</h2>
                         <?php wp_nav_menu( array('menu' => 'Light Commercial' )); ?>
-               	</div>
+                 </div>
                 <div id="newconstruct" class="services">
-                		<h2>New Construction</h2>
+                    <h2>New Construction</h2>
                         <?php wp_nav_menu( array('menu' => 'New Construction' )); ?>
-               	</div>
+                 </div>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+      </div><!-- #content -->
+    </div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -23,26 +23,26 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
+  /*
+   * Print the <title> tag based on what is being viewed.
+   */
+  global $page, $paged;
 
-	wp_title( '|', true, 'right' );
+  wp_title( '|', true, 'right' );
 
-	// Add the blog name.
-	bloginfo( 'name' );
+  // Add the blog name.
+  bloginfo( 'name' );
 
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
+  // Add the blog description for the home/front page.
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    echo " | $site_description";
 
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'cornerstone' ), max( $paged, $page ) );
+  // Add a page number if necessary:
+  if ( $paged >= 2 || $page >= 2 )
+    echo ' | ' . sprintf( __( 'Page %s', 'cornerstone' ), max( $paged, $page ) );
 
-	?></title>
+  ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="http://www.starverte.com/scripts/royalslider/default/rs-default.css" />
 <link rel="stylesheet" type="text/css" media="all" href="http://www.starverte.com/scripts/royalslider/royalslider.css" />
@@ -62,20 +62,20 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 <?php do_action( 'before' ); ?>
-	<header id="branding" role="banner">
-		<hgroup>
-			<a href="http://fccornerstone.com"><img id="logo" style="border:none;" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" /></a>
-		<span class="quote"><a href="http://fccornerstone.com/blog" style="margin-right:1em;">Blog</a> <a href="http://fccornerstone.com/contact/quote">Request a quote</a></span>
+  <header id="branding" role="banner">
+    <hgroup>
+      <a href="http://fccornerstone.com"><img id="logo" style="border:none;" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" /></a>
+    <span class="quote"><a href="http://fccornerstone.com/blog" style="margin-right:1em;">Blog</a> <a href="http://fccornerstone.com/contact/quote">Request a quote</a></span>
             <?php get_search_form(); ?>
-		</hgroup>
+    </hgroup>
 
-		<nav id="access" role="navigation">
-			<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'cornerstone' ); ?></h1>
-			<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'cornerstone' ); ?>"><?php _e( 'Skip to content', 'cornerstone' ); ?></a></div>
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'cornerstone' ); ?></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'cornerstone' ); ?>"><?php _e( 'Skip to content', 'cornerstone' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #access -->
+      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </nav><!-- #access -->
         <hr />
-	</header><!-- #branding -->
+  </header><!-- #branding -->
 
-	<div id="main">
+  <div id="main">
